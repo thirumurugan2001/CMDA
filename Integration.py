@@ -34,11 +34,9 @@ def lead_import(file_path):
             analysis_data.update(update_data)            
             records = excel_to_json(matched_file_path)            
             if records: 
-                # cmda_success = crm.push_records_to_zoho(records)
-                # leads_success = assgin_leads_to_lead_name(area_result.get('matched_file_path', matched_file_path), crm)  
-                # print(f"CMDA Success: {cmda_success}, Leads Success: {leads_success}")   
-                cmda_success = True  # Placeholder for actual CMDA push result
-                leads_success = True  # Placeholder for actual Leads creation result        
+                cmda_success = crm.push_records_to_zoho(records)
+                leads_success = assgin_leads_to_lead_name(area_result.get('matched_file_path', matched_file_path), crm)  
+                print(f"CMDA Success: {cmda_success}, Leads Success: {leads_success}")         
                 if cmda_success and leads_success:
                     return {
                         "message": "Records pushed to CMDA and Leads created successfully!",
