@@ -126,25 +126,23 @@ def assign_sales_person_to_areas(excel_file_path: str, area_column_name: str = '
                                  sheet_name: str = None, fuzzy_match_threshold: int = 100):
     
     SALES_PERSON_AREAS = {
-        "Abhishek R G": ["Adambakkam","Alandur", "Alandur Guindy", "Guindy", "Madipakkam", 
-            "Medavakkam", "Nanganallur", "Pallikaranai", "Thalakananchery","Madambakkam", "Ward No. B of Nanganallur",
+        "Abhishek R G": ["Adambakkam","Alandur", "Alandur Guindy", "Guindy", "Madipakkam","Keelkattalai","Medavakkam", "Nanganallur", "Pallikaranai", "Thalakananchery","Madambakkam", "Ward No. B of Nanganallur",
             "Thalakkanancheri", "Thalakkananchery", "Thalakkancheri", "Velachery","Keezhkattalai","Keelkattalai"
         ],
         "Jagan": [
-            "Adyar", "Adayar","Athipattu", "Egmore", "Kottur", "Koyambedu", "koyambedu", "Parutipattu", "Purasavakkam",
+            "Adyar", "Adayar","Athipattu", "Egmore", "Kottur", "Koyambedu","Triplicane","koyambedu", "Parutipattu", "Purasavakkam",
             "Koyembedu", "Mogappair","Mogappiar", "Mullam", "Naduvakarai", "Naduvankarai","Naduvakkarai","Naduvankkarai", "Nekundram", "Nerkundram", "Nolambur", "Nungambakkam","Villivakkam",
             "Pallipattu", "Part of Thirumangalam", "Periyakudal", "Alwarpet","Secretariat Colony Kilpauk Chennai.", "Urur", "Vada Agaram", "Vepery","Aminjikarai","Anna Nagar","part of Nungambakkam","Sembium"
         ],          
         "Karthik": [
-            "Arumbakkam", "Ayyappanthangal", "Ekkaduthangal", "Goparasanallur", 
-            "Kalikundram", "Kanagam", "Karambakkam", "Kodambakkam", "Kolapakkam", 
+            "Arumbakkam", "Ayyappanthangal", "Ekkaduthangal", "Goparasanallur","Mugalivakkam","Kalikundram", "Kanagam", "Karambakkam", "Kodambakkam", "Kolapakkam", 
             "Kulamanivakkam", "Madhananthapuram", "Madhandhapuram", "Manapakkam","Madhanandapuram",
             "Mangadu-B", "Moulivakkam", "Noombal", "Pammal", "Panaveduthottam", 
             "Parivakkam", "Porur", "Puliyur", "Saligramam", "Tharapakkam", "Ashok nagar", "Ashok Nagar",
             "Valasaravakkam", "Virugambakkam", "Voyalanallur-A","Mambalam","K.K. Nagar","Kattupakkam"
         ],
         "Venkatesh": [
-            "Agaramthen", "Anakaputhur", "Chembarambakkam", "Cowl Bazaar", 
+            "Agaramthen", "Anakaputhur", "Chembarambakkam", "Cowl Bazaar","Ward No.B of Zamin Pallavaram",
             "Gowrivakkam", "Karapakkam", "Kaspapuram", "Kulathuvancheri", 
             "Kundrathur", "Kundrathur - A", "Kundrathur - B", "Kundrathur-A", 
             "Kundrathur-B", "Malayambakkam", "Manancheri", "Mannivakkam","Nadambakkam", 
